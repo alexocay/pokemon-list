@@ -27,7 +27,7 @@ export class PokeTableComponent implements OnInit {
 
   getItem() {
     let itemData;
-    for (let i = 0; i <= 300; i++) {
+    for (let i = 1; i <= 300; i++) {
       this.itemService.getItem(i).subscribe(
         (res) => {
           itemData = {
@@ -35,8 +35,8 @@ export class PokeTableComponent implements OnInit {
             name: res.name,
             weight: res.weight,
           };
-          this.data.push(itemData);
-          this.dataSource = new MatTableDataSource(this.data); //refresh dataSource
+          this.data.push(itemData); //Put Data in Array
+          this.dataSource = new MatTableDataSource<any>(this.data); //refresh dataSource
           this.dataSource.sort = this.sort;
           this.dataSource.paginator = this.paginator;
         },
@@ -48,6 +48,7 @@ export class PokeTableComponent implements OnInit {
   }
 
   applyFilter(event: Event) {
+    //Paginator filter
     const filterValue = (event.target as HTMLInputElement).value;
     this.dataSource.filter = filterValue.trim().toLowerCase();
 
