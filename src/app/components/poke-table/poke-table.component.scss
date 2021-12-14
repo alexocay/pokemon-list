@@ -1,0 +1,92 @@
+@import "../../../assets/styles/basics.scss";
+
+.container {
+  margin-top: 50px;
+  min-height: calc(100vh - 85px);
+  text-align: center;
+  width: 100%;
+}
+
+.mat-cell {
+  color: $white;
+  font-size: 20px;
+}
+
+.mat-cell:first-letter {
+  text-transform: uppercase;
+}
+
+.mat-form-field {
+  font-size: 15px;
+  margin-bottom: 5px;
+  padding: 10px;
+  position: absolute;
+  right: 2%;
+  top: 0;
+  width: 20%;
+}
+
+.mat-header-cell {
+  background-color: $yellow;
+  color: $blue;
+  font-size: 25px;
+  font-weight: bold;
+  text-align: center;
+}
+
+.mat-row {
+  background-color: $navy;
+}
+
+.mat-row:hover {
+  box-shadow: inset 0 0 0 3px $blue;
+  cursor: pointer;
+}
+
+::ng-deep.mat-form-field-appearance-legacy .mat-form-field-infix {
+  //ng-deep: Help us to modify angular material classes
+  background-color: $navy;
+  border-radius: 10px;
+}
+
+::ng-deep.mat-form-field-label {
+  color: $yellow !important;
+  margin-left: 2%;
+}
+
+::ng-deep.mat-form-field-ripple {
+  background-color: $yellow !important;
+}
+
+::ng-deep.mat-form-field-underline {
+  background-color: $yellow !important;
+}
+
+::ng-deep.mat-paginator {
+  background-color: $yellow;
+  margin: auto;
+  width: 80%;
+}
+
+::ng-deep.mat-sort-header-container {
+  margin-left: 40%;
+}
+
+::ng-deep.mat-sort-header-arrow {
+  color: $red;
+}
+
+::ng-deep.mat-sort-header-arrow:hover {
+  color: $red;
+}
+
+input {
+  color: $white !important;
+  margin-left: 2%;
+}
+
+table {
+  min-width: 80%;
+  margin: auto;
+  text-align: center;
+}

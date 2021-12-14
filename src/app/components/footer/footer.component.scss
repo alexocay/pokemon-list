@@ -1,0 +1,13 @@
+@import "../../../assets/styles/basics.scss";
+
+footer {
+  align-items: center;
+  background-image: url("../../../assets/img/header1.png");
+  color: black;
+  display: flex;
+  flex: 0;
+  font-weight: bolder;
+  height: 85px;
+  justify-content: center;
+  margin-top: 3%;
+}

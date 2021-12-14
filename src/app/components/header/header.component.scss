@@ -1,0 +1,13 @@
+@import "../../../assets/styles/basics.scss";
+
+.mat-toolbar {
+  background-image: url("../../../assets/img/header1.png");
+}
+
+img {
+  margin-left: 1%;
+}
+
+img:hover {
+  cursor: pointer;
+}

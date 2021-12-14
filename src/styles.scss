@@ -1,1 +1,11 @@
-/* You can add global styles to this file, and also import other style files */
+@import "assets/styles/basics.scss";
+
+html,
+body {
+  height: 100%;
+}
+body {
+  background-color: $black;
+  font-family: Verdana, Geneva, Tahoma, sans-serif;
+  margin: 0;
+}
