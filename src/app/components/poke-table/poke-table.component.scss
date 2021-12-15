@@ -73,11 +73,14 @@
 }
 
 ::ng-deep.mat-sort-header-arrow {
-  color: $red;
+  color: black;
+  opacity: 0.54 !important;
+  transform: translateY(0px) !important;
 }
 
 ::ng-deep.mat-sort-header-arrow:hover {
-  color: $red;
+  color: balck;
+  opacity: 1 !important;
 }
 
 input {
