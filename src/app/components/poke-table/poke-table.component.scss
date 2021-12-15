@@ -43,8 +43,8 @@
   cursor: pointer;
 }
 
+//ng-deep: Help us to modify angular material classes
 ::ng-deep.mat-form-field-appearance-legacy .mat-form-field-infix {
-  //ng-deep: Help us to modify angular material classes
   background-color: $navy;
   border-radius: 10px;
 }
